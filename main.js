@@ -2,7 +2,6 @@ const gifSection = document.querySelector('.gif-section')
 const searchBtn = document.querySelector('#search-btn')
 let apiKey = 'FF5JPMvjibp8AcaszNexYGxzFPnjRJ4n'
 
-
 const img = document.querySelector('.test-img')
 
 async function getGif()
@@ -33,10 +32,6 @@ async function getGif()
         `
         gifSection.insertAdjacentHTML('afterbegin', gifContainer)
     })
-
-
-
-    // img.setAttribute('src', product.data[0].images.downsized_medium.url)
 }
 
 searchBtn.addEventListener('click', (event)=>{
