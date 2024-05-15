@@ -1,5 +1,5 @@
 :root{
-    --main-bg-color: #8B94A3;
+    --main-bg-color: #0b0b0b;
     --main-color: #F3FFBD;
     --secondary-color: #FF1654;
     --teritary-color: #1F1A38;
@@ -25,7 +25,7 @@ body{
 main{
     max-width: 1280px;
     margin: 0 auto;
-    padding: 0 32px;
+    padding: 0 32px 32px;
 }
 
 .box{
@@ -54,6 +54,7 @@ main{
     border-radius: 10px;
     cursor: pointer;
     padding: 8px 32px;
+    font-size: 1.5rem;
 }
 
 .gif-section{
@@ -83,6 +84,15 @@ main{
     main{
         padding: 0 16px;
     }
+
+    .search-container input{
+        font-size: 1rem;
+    }
+    
+    #search-btn{
+        font-size: 1rem;
+    }
+
     .gif-section{
         grid-template-columns: repeat(1, 1fr);
     }
