@@ -1,7 +1,7 @@
 :root{
     --main-bg-color: #0b0b0b;
     --main-color: #F3FFBD;
-    --secondary-color: #FF1654;
+    --secondary-color: #fffbfc;
     --teritary-color: #1F1A38;
     --dark-color: #13070C;
 }
@@ -23,38 +23,56 @@ body{
 }
 
 main{
-    max-width: 1280px;
+    /* max-width: 1280px; */
     margin: 0 auto;
-    padding: 0 32px 32px;
+    padding: 0 32px;
 }
 
 .box{
-    margin-top: 32px;
-    margin-bottom: 64px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0px -32px 64px -32px;
+    padding: 16px 32px;
+    background: linear-gradient(45deg, #d884e5, #617dd0, #6fb6d7, #78d26e);
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo img{
+    width: 32px;
 }
 
 .search-container{
     display: flex;
-    gap: 32px;
-    justify-content: center;
+    justify-content: space-between;
+    overflow: hidden;
+    width: 60%;
+    border-radius: 15px;
+    background: var(--secondary-color);
+    padding: 16px;
 }
 
 .search-container input{
-    width: 70%;
+    width: 100%;
     font-size: 1.5rem;
-    padding: 16px 16px;
-    width: 60%;
-    border-radius: 15px;
     background: var(--secondary-color);
     outline: none;
 }
 
 #search-btn{
-    color: var(--secondary-color);
     border-radius: 10px;
     cursor: pointer;
-    padding: 8px 32px;
+
     font-size: 1.5rem;
+    background: none;
+}
+
+#search-btn img{
+    width: 16px;
 }
 
 .gif-section{
@@ -85,12 +103,24 @@ main{
         padding: 0 16px;
     }
 
+    .logo img{
+        width: 16px;
+    }
+
+    .search-container{
+        width: 80%;
+        padding: 8px;
+    }
     .search-container input{
         font-size: 1rem;
+
     }
     
     #search-btn{
         font-size: 1rem;
+    }
+    #search-btn img{
+        width: 10px;
     }
 
     .gif-section{
