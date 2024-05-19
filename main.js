@@ -1,6 +1,6 @@
 const gifSection = document.querySelector('.gif-section')
 const searchBtn = document.querySelector('#search-btn')
-let apiKey = 'FF5JPMvjibp8AcaszNexYGxzFPnjRJ4n'
+const apiKey = 'FF5JPMvjibp8AcaszNexYGxzFPnjRJ4n'
 
 async function getGif()
 {
@@ -12,7 +12,7 @@ async function getGif()
     const inputValue = document.querySelector('#search-box').value
     const gifData = {
         search: 'lion',
-        limit: 6,
+        limit: 9,
         offset: 0,
         rating: 'g',
     }
@@ -22,7 +22,6 @@ async function getGif()
         const product = await responce.json()
     
         const gifArray = product.data
-        console.log(gifArray)
         gifArray.forEach((info)=>{
             const gifContainer = `
                 <div id="gif" class="gif-container">
